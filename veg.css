@@ -1,0 +1,595 @@
+body{
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+nav{
+
+    background-color: white;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 77px;
+    padding: 0 28px 0 28px; 
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.nav_link
+{
+    text-decoration: none;
+    color: black;
+}
+.drop_list{
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.dropdown-content{
+
+     border-top: 2px solid rgb(170, 210, 54);
+    background-color: white;
+    box-shadow: 0 2px 5px #ccc;
+    display: none;
+    padding: 20px;
+    width: 130px;
+    position:absolute; 
+}
+.dropdown-content a {
+     display: block;
+    border-bottom: 1px solid #ccc;
+    padding: 5px; 
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#logo{
+    width: 40px;
+}
+.primary-button {
+    font-family: 'Poppins', sans-serif;;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    margin-right: 16px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 4px;
+}
+
+header{
+    width: 100%;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/demoapi-43d03.appspot.com/o/landing-background.png?alt=media');
+    height: 100vh;
+    background-size: cover;
+    background-position:center; 
+}
+#heading-section{
+    width:100%;
+    height: 100vh;
+}
+.heading-content{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading-content h1{
+    width: 100%;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    margin: 0;
+    max-width: 900px;
+}
+.heading-content p {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #8b8b99;
+    text-align: center;
+    padding-top: 32px;
+    max-width: 900px;
+}
+#diet-steps{
+    display:flex;
+    justify-content: stretch;
+    width: 100%;
+}
+.step-1{
+    background-color: #5acda6;
+}
+
+.step-2{
+    background-color: #91ac41;
+}
+
+.step-3{
+    background-color: #e4b476;
+}
+
+.step-4{
+    background-color: #f69dad;
+}
+.step_list{
+    text-align: center;
+    box-sizing: border-box;
+    width:25%;
+    padding:105px 40px 105px 40px;
+}
+.step_list h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+}
+.step_list p{
+    color: white;
+    font-size: 14px;
+
+}
+.step_list i{
+    color: white;
+    font-size: 96px;
+    transition: all 0.5s;
+}
+.step_list:hover i{
+    transform: scale(1.5, 1.5);
+}
+#fresh-food-section{
+    width: 100%;
+    text-align: center;
+    background-color: #f7eee2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.fresh-head{
+    font-family:'Caveat', cursive;
+    color:#91ac41;
+    font-size:24px;
+    margin: 0;
+    margin-top: 30px;
+}
+.fresh-content{
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 50px;
+}
+#fresh-food-section >h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.fresh-store{
+    display: flex;
+    width: 100%;
+    justify-content: stretch;
+    margin: 0 auto 0 auto;
+    max-width:1100px;
+}
+.fresh-store-list{
+    text-align: center;
+    width: 25%;
+    padding: 24px;
+}
+.fresh-store-list h3{
+
+    font-size: 24px;
+    font-weight: 600;
+}
+.fresh-store-list p{
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+}
+.logo2 i{
+    font-size: 60px;
+}
+.logo2{
+    display: inline-block;
+    color: white;
+    background-color: #e3b375;
+    border-radius: 50%;
+    padding: 40px;
+    transition: all 0.5s;
+}
+.fresh-store-list:hover .logo2{
+    transform: scale(1.25, 1.25);
+}
+#testimonial-section{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.test-head{
+    font-size: 24px;
+    font-family:  'Caveat', cursive;
+    color:#91ac41;
+    margin-top: 30px;
+}
+#testimonial-section > h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.test{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    max-width: 1100px;
+}
+.test-item-list{
+    margin: 16px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    transition: box-shadow 0.5s;
+    width: 25%;
+    text-align: center;
+    background-color: #f5f6fb;
+    padding: 40px 30px;
+}
+.test-item-list img{
+    width: 80px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+}
+.test-item-list:hover {
+    box-shadow: 0 12px 16px 0 rgba(39,39,47,0.06);
+}
+.test-content{
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 700px;
+    margin: 0 auto 0 auto;
+}
+.test-sollu {
+    font-style: italic;
+    font-size: 14px;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+.test-item-list h3{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+.test-position{
+    color: #8b8b99;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+
+}
+#newsletter-section{
+    display: flex;
+    justify-content: stretch;
+}
+.part-1 img{
+    width: 100%
+}
+.part-1{
+    width:65%;
+    display: inline-block;
+  
+}
+.part-2{
+    width: 35%;
+    display: inline-block;
+    background-image: url('https://i.imgur.com/1m096Jy.jpg');
+    background-position:left;
+    background-size: cover;
+}
+.news-content{
+    margin: 115px;
+}
+.news-content h3 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0 0 7px;
+}
+.news-content p {
+    color: #8b8b99;
+    font-size: 16px;
+    letter-spacing: 0.5;
+    line-height: 1.6;
+    margin: 0;
+}
+.subscribe-email {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: white;
+    padding: 10px;
+    color: #8b8b99;
+    font-size: 14px;
+    margin-top: 40px;
+    display: block;
+    outline: none;
+}
+
+.subscribe-btn:hover {
+    color: #f69dad;
+    background-color: white;
+    border: 1px solid #f69dad;
+}
+.subscribe-btn {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 15px;
+    background-color: #f69dad;
+    padding: 14px 42px;
+    border-radius: 4px;
+    color: white;
+    border: 0;
+
+}
+#stats-section{
+    background-color: #f6fcfa;
+    width: 100%;
+}
+.stats{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+    padding:100px 0 100px 0;
+    text-align: center;
+}
+.stats-list{
+    width: 25%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.stats-list p{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    color: #57e3b5;
+}
+.stats-list h3 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+}
+#video-section iframe {
+    width: 100%;
+    height: 450px;
+}
+#video-section > div {
+    width: 100%;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+
+}
+#video-section h3 {
+    color: #8b8b99;
+    font-size: 44px;
+    font-weight: 400;
+}
+.line {
+    width: 50px;
+    display: inline-block;
+    height: 1px;
+    background-color: #e4b476;
+    margin-bottom: 40px;
+}
+.address{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding:100px 0 100px 0;
+}
+.address > div {
+    width: 50%;
+}
+.address > div:last-of-type{
+    width: 40%;
+}
+.add-head{
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+.address-headlines{
+    font-weight: 800;
+    font-size: 44px;
+    margin: 0;
+    
+}
+.address-content{
+    color: #8b8b99;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.address-city{
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600;
+    margin-top: 32px;
+}
+.address-address{
+    font-size: 16px;
+    font-weight: 400;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    line-height: 2;
+}
+#button-submit {
+    font-size: 14px;
+}
+.input-box {
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    color: #8b8b99;
+    border-radius: 5px;
+    border: 1px solid #e5e6ec;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    outline: none;
+}
+footer {
+    background-color: #232323;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 30px 0px;
+}
+@media (max-width: 720px) {    
+    .drop_list {
+        display: none;
+    }
+
+    .primary-button {
+        margin-right: 0
+    }
+
+    .heading-content > h1 {
+        font-size: 28px;
+    }
+
+    .heading-content > p {
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    #diet-steps {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .step_list {
+        width: 100%;
+    }
+
+    #fresh-food-section {
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    #fresh-food-section h3 {
+        font-size: 28px;
+    }
+
+    .fresh-store {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fresh-store-list {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #testimonial-section {
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    #testimonial-section > h3 {
+       font-size: 28px; 
+    }
+
+    .test {
+        flex-direction: column;
+    }
+
+    .test-item-list {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .test-person {
+        font-size: important 18px;
+    }
+
+    #newsletter-section {
+        flex-direction: column;
+    }
+    
+    .part-2 .news-content {
+        margin: 16px;
+    }
+
+    .part-2 .news-content h3 {
+        font-size: 28px;
+    }
+
+    .part-1 {
+        width: 100%;
+    }
+
+    .part-2 {
+        width: 100%;
+    }
+
+    .stats {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stats-list {
+        width: 100%;
+    }
+
+    .address{
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 16px;
+        padding-top: 0;
+        box-sizing: border-box;
+    }
+
+    .address > div {
+        width: 100%;
+    }
+
+    .address > div:last-of-type {
+        width: 100%;
+    }
+
+}
